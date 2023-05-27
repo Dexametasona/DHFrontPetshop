@@ -1,0 +1,239 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto";
+}
+
+/*----------------------------------------------------- cabecera */
+.flag {
+  background-color: #222222;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 4rem 5px 4rem;
+}
+.flag ul {
+  display: flex;
+  list-style-type: none;
+}
+.flag ul li {
+  margin-inline: 0.5rem;
+  cursor: pointer;
+}
+
+nav {
+  background-color: #f0a83e;
+  display: flex;
+  justify-content: space-between;
+  padding-block: 2rem;
+  padding-inline: 2rem;
+}
+nav ul {
+  display: flex;
+  list-style-type: none;
+}
+nav ul li {
+  margin-inline: 1rem;
+}
+nav ul a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* ---------------------------------------principal */
+.banner {
+  background-image: url("https://i.ibb.co/N7q3QhH/bg-plate.png");
+  background-size: 100% 100%;
+  height: 70vh;
+  position: relative;
+}
+.banner div {
+  position: absolute;
+  top: 30%;
+  right: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.banner div h2 {
+  font-size: 2rem;
+  font-weight: lighter;
+  background-color: white;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  margin-bottom: 0.5rem;
+}
+.banner div p {
+  font-size: 20px;
+  margin-bottom: 0.5rem;
+}
+.banner div button {
+  padding: 1rem;
+  background-color: #f0a83e;
+  border-radius: 5px;
+  margin-bottom: 0.5rem;
+  border: none;
+  color: white;
+}
+
+.products {
+  display: grid;
+  grid-template: auto 1fr/repeat(3, 1fr);
+  padding-top: 1rem;
+  justify-items: center;
+}
+.products_banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-column: span 3;
+}
+.products_banner h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.products_banner ul {
+  display: flex;
+  list-style-type: none;
+}
+.products_banner ul li {
+  margin: 1rem;
+  color: #666666;
+}
+.products_card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: bold;
+}
+.products_card span {
+  color: #f0a83e;
+}
+
+.contact {
+  display: flex;
+  padding-top: 4rem;
+  flex-direction: column;
+  align-items: center;
+}
+.contact h2 {
+  color: #3c2313;
+  font-weight: bolder;
+  margin-bottom: 2rem;
+}
+.contact form {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr auto;
+  width: 25vw;
+  gap: 1rem;
+  margin-bottom: 4rem;
+}
+.contact form input {
+  border-radius: 1rem;
+  padding: 1rem;
+  background-color: #3c2313;
+}
+.contact form input::-moz-placeholder {
+  color: white;
+}
+.contact form input::placeholder {
+  color: white;
+}
+.contact form div {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+.contact form div button {
+  padding-inline: 1.5rem;
+  padding-block: 0.5rem;
+  border-radius: 1rem;
+  border: none;
+  color: white;
+  background-color: #8a8787;
+  margin-inline: 0.5rem;
+}
+.contact form div :nth-child(2) {
+  background-color: #f0a83e;
+}
+
+/* ----------------------------------------------------------footer */
+.footer {
+  display: flex;
+  flex-direction: column;
+}
+.footer_banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f0a83e;
+  padding-block: 1rem;
+}
+.footer_banner p {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  color: white;
+  padding-inline: 1rem;
+}
+.footer_banner p img {
+  margin-right: 0.5rem;
+}
+.footer_banner form {
+  margin-right: 2rem;
+}
+.footer_banner input {
+  padding: 1rem;
+  border-radius: 1rem;
+  border: none;
+  width: 25vw;
+}
+.footer_banner button {
+  padding: 0.8rem;
+  border-radius: 1rem;
+  border: none;
+  color: white;
+  background-color: #3c2313;
+  margin-inline: 0.5rem;
+}
+.footer_contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 4rem;
+  background-color: #3c2313;
+  padding-block: 1rem;
+}
+.footer_contact ul {
+  list-style-type: none;
+}
+.footer_contact ul li {
+  display: flex;
+  margin-bottom: 1rem;
+  color: white;
+  gap: 1rem;
+}
+.footer_contact ul li p {
+  display: flex;
+  flex-direction: column;
+}
+.footer_contact ul li p span {
+  color: #8a8787;
+  font-size: 0.5rem;
+}
+.footer_copyright {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  font-size: 0.8rem;
+  padding-block: 5px;
+}/*# sourceMappingURL=styles.css.map */
